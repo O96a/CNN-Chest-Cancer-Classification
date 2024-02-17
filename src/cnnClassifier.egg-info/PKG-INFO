@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: cnnClassifier
+Version: 0.0.0
+Summary: A small python package for CNN app
+Home-page: https://github.com/O96a/CNN-Chest-Cancer-Classification
+Author: O96a
+Author-email: mehaisi3@gmail.com
+Project-URL: Bug Tracker, https://github.com/O96a/CNN-Chest-Cancer-Classification/issues
+License-File: LICENSE
+
+# CNN-Chest-Cancer-Classification
+A CNN project that uses MLflow and DVC to classify chest CT scans
