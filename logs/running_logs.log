@@ -971,3 +971,9 @@ x==========x]
 [2024-02-24 17:35:27,412: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
 
 x==========x]
+[2024-02-24 17:51:52,182: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-24 17:51:52,187: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-24 17:51:52,188: INFO: common: created directory at: artifacts]
+[2024-02-24 17:52:04,044: INFO: common: json file saved at: scores.json]
+[2024-02-24 17:52:07,162: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2024-02-24 17:52:07,916: INFO: builder_impl: Assets written to: C:\Users\mehai\AppData\Local\Temp\tmpxzxecwsu\model\data\model\assets]
