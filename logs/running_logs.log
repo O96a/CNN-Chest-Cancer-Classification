@@ -977,3 +977,42 @@ x==========x]
 [2024-02-24 17:52:04,044: INFO: common: json file saved at: scores.json]
 [2024-02-24 17:52:07,162: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
 [2024-02-24 17:52:07,916: INFO: builder_impl: Assets written to: C:\Users\mehai\AppData\Local\Temp\tmpxzxecwsu\model\data\model\assets]
+[2024-02-24 18:09:57,713: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-02-24 18:09:57,715: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-24 18:09:57,717: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-24 18:09:57,718: INFO: common: created directory at: artifacts]
+[2024-02-24 18:09:57,719: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-02-24 18:09:57,719: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1I3Q4CkeGWnAGbFjeUpfyHsiU4VMBKtPM/view?usp=sharing into file artifacts/data_ingestion/Chest-CT-Scan-data.zip]
+[2024-02-24 18:10:12,491: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1I3Q4CkeGWnAGbFjeUpfyHsiU4VMBKtPM/view?usp=sharing into file artifacts/data_ingestion/Chest-CT-Scan-data.zip]
+[2024-02-24 18:10:12,922: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-02-24 18:10:12,923: INFO: main: *******************]
+[2024-02-24 18:10:12,923: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-02-24 18:10:12,925: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-24 18:10:12,928: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-24 18:10:12,928: INFO: common: created directory at: artifacts]
+[2024-02-24 18:10:12,929: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-02-24 18:10:13,447: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-02-24 18:10:13,678: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-02-24 18:10:13,678: INFO: main: *******************]
+[2024-02-24 18:10:13,678: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-02-24 18:10:13,680: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-24 18:10:13,681: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-24 18:10:13,682: INFO: common: created directory at: artifacts]
+[2024-02-24 18:10:13,682: INFO: common: created directory at: artifacts\training]
+[2024-02-24 18:10:52,439: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-02-24 18:10:52,440: INFO: main: *******************]
+[2024-02-24 18:10:52,441: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-02-24 18:10:52,443: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-24 18:10:52,444: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-24 18:10:52,445: INFO: common: created directory at: artifacts]
+[2024-02-24 18:11:04,972: INFO: common: json file saved at: scores.json]
+[2024-02-24 18:11:04,973: INFO: common: json file saved at: scores.json]
+[2024-02-24 18:11:04,974: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
