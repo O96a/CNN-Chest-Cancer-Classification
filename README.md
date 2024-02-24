@@ -22,12 +22,11 @@ MLFLOW_TRACKING_USERNAME=O96a \
 MLFLOW_TRACKING_PASSWORD=691421056a72cc820ed78400a4892ed9ade03e3b \
 python script.py
 
+
 ```bash
 
 export MLFLOW_TRACKING_URI=https://dagshub.com/O96a/CNN-Chest-Cancer-Classification.mlflow
-
 export MLFLOW_TRACKING_USERNAME=O96a 
-
 export MLFLOW_TRACKING_PASSWORD=691421056a72cc820ed78400a4892ed9ade03e3b
 
 
