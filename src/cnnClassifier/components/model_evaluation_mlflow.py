@@ -4,10 +4,7 @@ import mlflow
 import mlflow.keras
 from urllib.parse import urlparse
 from cnnClassifier.entity.config_entity import EvaluationConfig
-from cnnClassifier.utils.common import read_yaml, create_directories, save_json
-
-
-
+from cnnClassifier.utils.common import read_yaml, create_directories,save_json
 
 
 class Evaluation:
@@ -65,6 +62,8 @@ class Evaluation:
             mlflow.log_metrics(
                 {"loss": self.score[0], "accuracy": self.score[1]}
             )
+            mlflow.tensorflow.autolog()  # Automatically log TensorFlow models
+
             # Model registry does not work with file store
             if tracking_url_type_store != "file":
 
