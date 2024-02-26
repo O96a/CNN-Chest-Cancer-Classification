@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Projects/CNN-Chest-Cancer-Classification/mlruns/0/3bd04e0d83a2492b8724ccc253bbd298/artifacts
+end_time: 1708976603900
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3bd04e0d83a2492b8724ccc253bbd298
+run_name: awesome-donkey-6
+run_uuid: 3bd04e0d83a2492b8724ccc253bbd298
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1708976594137
+status: 3
+tags: []
+user_id: mehai

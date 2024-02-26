@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Projects/CNN-Chest-Cancer-Classification/mlruns/0/9daa0a46a259460fa3441bee5510dcf0/artifacts
+end_time: 1708976788939
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9daa0a46a259460fa3441bee5510dcf0
+run_name: flawless-dolphin-684
+run_uuid: 9daa0a46a259460fa3441bee5510dcf0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1708976779241
+status: 3
+tags: []
+user_id: mehai

@@ -2164,3 +2164,73 @@ x==========x]
 [2024-02-26 22:32:44,645: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
 
 x==========x]
+[2024-02-26 22:38:07,420: INFO: stage_02_prepare_base_model: *******************]
+[2024-02-26 22:38:07,421: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model started <<<<<<]
+[2024-02-26 22:38:07,423: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-26 22:38:07,424: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-26 22:38:07,424: INFO: common: created directory at: artifacts]
+[2024-02-26 22:38:07,425: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-02-26 22:38:07,761: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-02-26 22:38:07,934: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-02-26 22:38:12,618: INFO: stage_03_model_trainer: *******************]
+[2024-02-26 22:38:12,618: INFO: stage_03_model_trainer: >>>>>> stage Training started <<<<<<]
+[2024-02-26 22:38:12,620: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-26 22:38:12,622: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-26 22:38:12,622: INFO: common: created directory at: artifacts]
+[2024-02-26 22:38:12,623: INFO: common: created directory at: artifacts\training]
+[2024-02-26 22:40:13,580: INFO: stage_03_model_trainer: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-02-26 22:40:19,605: INFO: stage_04_model_evaluation: *******************]
+[2024-02-26 22:40:19,605: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-02-26 22:40:19,607: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-26 22:40:19,609: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-26 22:40:19,609: INFO: common: created directory at: artifacts]
+[2024-02-26 22:40:33,377: INFO: common: json file saved at: scores.json]
+[2024-02-26 22:40:33,378: INFO: common: json file saved at: scores.json]
+[2024-02-26 22:40:33,379: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2024-02-26 22:43:02,239: INFO: stage_04_model_evaluation: *******************]
+[2024-02-26 22:43:02,240: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-02-26 22:43:02,242: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-26 22:43:02,243: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-26 22:43:02,243: INFO: common: created directory at: artifacts]
+[2024-02-26 22:43:13,957: INFO: common: json file saved at: scores.json]
+[2024-02-26 22:43:13,958: INFO: common: json file saved at: scores.json]
+[2024-02-26 22:43:15,215: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2024-02-26 22:43:15,873: INFO: builder_impl: Assets written to: C:\Users\mehai\AppData\Local\Temp\tmpekazx4ej\model\data\model\assets]
+[2024-02-26 22:43:23,809: INFO: dir_util: creating D:\Projects\CNN-Chest-Cancer-Classification\mlruns\0\3bd04e0d83a2492b8724ccc253bbd298\artifacts\model\data]
+[2024-02-26 22:43:23,811: INFO: dir_util: creating D:\Projects\CNN-Chest-Cancer-Classification\mlruns\0\3bd04e0d83a2492b8724ccc253bbd298\artifacts\model\data\model]
+[2024-02-26 22:43:23,812: INFO: dir_util: creating D:\Projects\CNN-Chest-Cancer-Classification\mlruns\0\3bd04e0d83a2492b8724ccc253bbd298\artifacts\model\data\model\assets]
+[2024-02-26 22:43:23,816: INFO: dir_util: creating D:\Projects\CNN-Chest-Cancer-Classification\mlruns\0\3bd04e0d83a2492b8724ccc253bbd298\artifacts\model\data\model\variables]
+[2024-02-26 22:43:23,901: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2024-02-26 22:43:48,128: INFO: stage_03_model_trainer: *******************]
+[2024-02-26 22:43:48,128: INFO: stage_03_model_trainer: >>>>>> stage Training started <<<<<<]
+[2024-02-26 22:43:48,130: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-26 22:43:48,131: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-26 22:43:48,132: INFO: common: created directory at: artifacts]
+[2024-02-26 22:43:48,132: INFO: common: created directory at: artifacts\training]
+[2024-02-26 22:45:58,881: INFO: stage_03_model_trainer: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-02-26 22:46:05,304: INFO: stage_04_model_evaluation: *******************]
+[2024-02-26 22:46:05,305: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-02-26 22:46:05,307: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-26 22:46:05,308: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-26 22:46:05,308: INFO: common: created directory at: artifacts]
+[2024-02-26 22:46:19,015: INFO: common: json file saved at: scores.json]
+[2024-02-26 22:46:19,017: INFO: common: json file saved at: scores.json]
+[2024-02-26 22:46:20,422: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2024-02-26 22:46:21,125: INFO: builder_impl: Assets written to: C:\Users\mehai\AppData\Local\Temp\tmpluyegu_y\model\data\model\assets]
+[2024-02-26 22:46:28,866: INFO: dir_util: creating D:\Projects\CNN-Chest-Cancer-Classification\mlruns\0\9daa0a46a259460fa3441bee5510dcf0\artifacts\model\data]
+[2024-02-26 22:46:28,867: INFO: dir_util: creating D:\Projects\CNN-Chest-Cancer-Classification\mlruns\0\9daa0a46a259460fa3441bee5510dcf0\artifacts\model\data\model]
+[2024-02-26 22:46:28,868: INFO: dir_util: creating D:\Projects\CNN-Chest-Cancer-Classification\mlruns\0\9daa0a46a259460fa3441bee5510dcf0\artifacts\model\data\model\assets]
+[2024-02-26 22:46:28,870: INFO: dir_util: creating D:\Projects\CNN-Chest-Cancer-Classification\mlruns\0\9daa0a46a259460fa3441bee5510dcf0\artifacts\model\data\model\variables]
+[2024-02-26 22:46:28,941: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
