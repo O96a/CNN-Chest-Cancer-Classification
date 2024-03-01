@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Projects/CNN-Chest-Cancer-Classification/mlruns/0/127fa1a776d34b219e9d9196b9abadbf/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 127fa1a776d34b219e9d9196b9abadbf
+run_name: rebellious-croc-139
+run_uuid: 127fa1a776d34b219e9d9196b9abadbf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1709319951851
+status: 1
+tags: []
+user_id: mehai

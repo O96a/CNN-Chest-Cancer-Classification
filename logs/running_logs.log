@@ -2784,3 +2784,29 @@ Traceback (most recent call last):
     "keras_version": keras_module.__version__,
                      ^^^^^^^^^^^^^^^^^^^^^^^^
 AttributeError: module 'tensorflow.keras' has no attribute '__version__'
+[2024-03-01 22:04:35,726: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-01 22:04:35,741: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-01 22:04:35,741: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-01 22:04:35,741: INFO: common: created directory at: artifacts]
+[2024-03-01 22:04:35,741: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-01 22:04:35,741: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1I3Q4CkeGWnAGbFjeUpfyHsiU4VMBKtPM/view?usp=sharing into file artifacts/data_ingestion/Chest-CT-Scan-data.zip]
+[2024-03-01 22:04:50,725: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1I3Q4CkeGWnAGbFjeUpfyHsiU4VMBKtPM/view?usp=sharing into file artifacts/data_ingestion/Chest-CT-Scan-data.zip]
+[2024-03-01 22:04:51,092: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-03-01 22:04:51,092: INFO: main: *******************]
+[2024-03-01 22:04:51,092: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-03-01 22:04:51,092: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-01 22:04:51,092: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-01 22:04:51,092: INFO: common: created directory at: artifacts]
+[2024-03-01 22:04:51,092: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-03-01 22:04:51,620: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-03-01 22:04:51,865: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-03-01 22:04:51,866: INFO: main: *******************]
+[2024-03-01 22:04:51,866: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-03-01 22:04:51,868: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-01 22:04:51,870: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-01 22:04:51,871: INFO: common: created directory at: artifacts]
+[2024-03-01 22:04:51,871: INFO: common: created directory at: artifacts\training]
