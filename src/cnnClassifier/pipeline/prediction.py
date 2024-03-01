@@ -1,8 +1,10 @@
 import numpy as np
-from tensorflow.keras.models import load_model
-from tensorflow.keras.preprocessing import image
+from tensorflow import keras
+from keras.models import load_model
+from keras.preprocessing import image
 import os
-
+from tensorflow.keras.preprocessing.image import load_img, img_to_array
+from tensorflow.keras.utils import load_img
 
 
 class PredictionPipeline:
@@ -14,8 +16,8 @@ class PredictionPipeline:
     def predict(self):
         ## load model
         
-        # model = load_model(os.path.join("artifacts","training", "model.h5"))
-        model = load_model(os.path.join("model", "model.h5"))
+        model = load_model(os.path.join("artifacts","training", "model.h5"))
+        # model = load_model(os.path.join("model", "model.h5"))
 
         imagename = self.filename
         test_image = image.load_img(imagename, target_size = (224,224))
