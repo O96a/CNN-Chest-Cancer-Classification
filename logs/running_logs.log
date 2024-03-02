@@ -2829,3 +2829,145 @@ x==========x]
 [2024-03-01 22:06:02,409: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
 
 x==========x]
+[2024-03-01 22:07:41,502: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-01 22:07:41,502: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-01 22:07:41,502: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-01 22:07:41,502: INFO: common: created directory at: artifacts]
+[2024-03-01 22:07:41,502: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-01 22:07:41,502: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1I3Q4CkeGWnAGbFjeUpfyHsiU4VMBKtPM/view?usp=sharing into file artifacts/data_ingestion/Chest-CT-Scan-data.zip]
+[2024-03-01 22:07:55,863: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1I3Q4CkeGWnAGbFjeUpfyHsiU4VMBKtPM/view?usp=sharing into file artifacts/data_ingestion/Chest-CT-Scan-data.zip]
+[2024-03-01 22:07:56,212: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-03-01 22:07:56,212: INFO: main: *******************]
+[2024-03-01 22:07:56,212: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-03-01 22:07:56,212: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-01 22:07:56,212: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-01 22:07:56,212: INFO: common: created directory at: artifacts]
+[2024-03-01 22:07:56,212: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-03-01 22:07:56,634: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-03-01 22:07:56,857: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-03-01 22:07:56,857: INFO: main: *******************]
+[2024-03-01 22:07:56,857: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-03-01 22:07:56,873: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-01 22:07:56,873: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-01 22:07:56,873: INFO: common: created directory at: artifacts]
+[2024-03-01 22:07:56,873: INFO: common: created directory at: artifacts\training]
+[2024-03-01 22:08:38,258: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-03-01 22:08:38,258: INFO: main: *******************]
+[2024-03-01 22:08:38,258: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-03-01 22:08:38,258: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-01 22:08:38,258: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-01 22:08:38,258: INFO: common: created directory at: artifacts]
+[2024-03-01 22:08:51,439: INFO: common: json file saved at: scores.json]
+[2024-03-01 22:08:51,439: INFO: common: json file saved at: scores.json]
+[2024-03-01 22:08:53,407: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2024-03-01 22:08:54,014: INFO: builder_impl: Assets written to: C:\Users\mehai\AppData\Local\Temp\tmpa99_2kd1\model\data\model\assets]
+[2024-03-01 22:09:01,907: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2024-03-01 22:10:56,851: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.255.34.22:8080]
+[2024-03-01 22:10:56,851: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-01 22:11:03,819: INFO: _internal: 127.0.0.1 - - [01/Mar/2024 22:11:03] "GET / HTTP/1.1" 200 -]
+[2024-03-01 22:11:13,947: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\mehai\anaconda3\envs\ctscan\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mehai\anaconda3\envs\ctscan\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mehai\anaconda3\envs\ctscan\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mehai\anaconda3\envs\ctscan\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mehai\anaconda3\envs\ctscan\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mehai\anaconda3\envs\ctscan\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "d:\Projects\CNN-Chest-Cancer-Classification\app.py", line 46, in predictRoute
+    result = clApp.classifier.predict()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\projects\cnn-chest-cancer-classification\src\cnnClassifier\pipeline\prediction.py", line 23, in predict
+    test_image = image.load_img(imagename, target_size = (224,224))
+                 ^^^^^^^^^^^^^^
+AttributeError: module 'keras.preprocessing.image' has no attribute 'load_img'
+[2024-03-01 22:11:13,954: INFO: _internal: 127.0.0.1 - - [01/Mar/2024 22:11:13] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-03-01 22:27:25,585: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.255.34.22:8080]
+[2024-03-01 22:27:25,585: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-01 22:27:31,417: INFO: _internal: 127.0.0.1 - - [01/Mar/2024 22:27:31] "GET / HTTP/1.1" 200 -]
+[2024-03-01 22:27:35,186: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\mehai\anaconda3\envs\ctscan\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mehai\anaconda3\envs\ctscan\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mehai\anaconda3\envs\ctscan\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mehai\anaconda3\envs\ctscan\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mehai\anaconda3\envs\ctscan\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mehai\anaconda3\envs\ctscan\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "d:\Projects\CNN-Chest-Cancer-Classification\app.py", line 46, in predictRoute
+    result = clApp.classifier.predict()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\projects\cnn-chest-cancer-classification\src\cnnClassifier\pipeline\prediction.py", line 19, in predict
+    model = load_model(os.path.join("D:/Projects/CNN-Chest-Cancer-Classification/artifacts/training/model.h5"))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mehai\anaconda3\envs\ctscan\Lib\site-packages\keras\src\saving\saving_api.py", line 183, in load_model
+    return legacy_h5_format.load_model_from_hdf5(filepath)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mehai\anaconda3\envs\ctscan\Lib\site-packages\keras\src\legacy\saving\legacy_h5_format.py", line 155, in load_model_from_hdf5
+    **saving_utils.compile_args_from_training_config(
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mehai\anaconda3\envs\ctscan\Lib\site-packages\keras\src\legacy\saving\saving_utils.py", line 143, in compile_args_from_training_config
+    loss = _deserialize_nested_config(losses.deserialize, loss_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mehai\anaconda3\envs\ctscan\Lib\site-packages\keras\src\legacy\saving\saving_utils.py", line 202, in _deserialize_nested_config
+    return deserialize_fn(config)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mehai\anaconda3\envs\ctscan\Lib\site-packages\keras\src\losses\__init__.py", line 124, in deserialize
+    return serialization_lib.deserialize_keras_object(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mehai\anaconda3\envs\ctscan\Lib\site-packages\keras\src\saving\serialization_lib.py", line 576, in deserialize_keras_object
+    return deserialize_keras_object(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mehai\anaconda3\envs\ctscan\Lib\site-packages\keras\src\saving\serialization_lib.py", line 711, in deserialize_keras_object
+    instance = cls.from_config(inner_config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mehai\anaconda3\envs\ctscan\Lib\site-packages\keras\src\losses\losses.py", line 34, in from_config
+    return cls(**config)
+           ^^^^^^^^^^^^^
+  File "C:\Users\mehai\anaconda3\envs\ctscan\Lib\site-packages\keras\src\losses\losses.py", line 737, in __init__
+    super().__init__(
+  File "C:\Users\mehai\anaconda3\envs\ctscan\Lib\site-packages\keras\src\losses\losses.py", line 16, in __init__
+    super().__init__(reduction=reduction, name=name)
+  File "C:\Users\mehai\anaconda3\envs\ctscan\Lib\site-packages\keras\src\losses\loss.py", line 29, in __init__
+    self.reduction = standardize_reduction(reduction)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mehai\anaconda3\envs\ctscan\Lib\site-packages\keras\src\losses\loss.py", line 77, in standardize_reduction
+    raise ValueError(
+ValueError: Invalid value for argument `reduction`. Expected one of {None, 'none', 'sum_over_batch_size', 'sum'}. Received: reduction=auto
+[2024-03-01 22:27:35,193: INFO: _internal: 127.0.0.1 - - [01/Mar/2024 22:27:35] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
