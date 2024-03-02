@@ -2810,3 +2810,22 @@ x==========x]
 [2024-03-01 22:04:51,870: INFO: common: yaml file: params.yaml loaded successfully]
 [2024-03-01 22:04:51,871: INFO: common: created directory at: artifacts]
 [2024-03-01 22:04:51,871: INFO: common: created directory at: artifacts\training]
+[2024-03-01 22:05:37,727: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-03-01 22:05:37,727: INFO: main: *******************]
+[2024-03-01 22:05:37,734: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-03-01 22:05:37,737: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-01 22:05:37,741: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-01 22:05:37,741: INFO: common: created directory at: artifacts]
+[2024-03-01 22:05:51,595: INFO: common: json file saved at: scores.json]
+[2024-03-01 22:05:51,595: INFO: common: json file saved at: scores.json]
+[2024-03-01 22:05:53,152: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2024-03-01 22:05:53,893: INFO: builder_impl: Assets written to: C:\Users\mehai\AppData\Local\Temp\tmpmipd_fcr\model\data\model\assets]
+[2024-03-01 22:06:02,316: INFO: dir_util: creating D:\Projects\CNN-Chest-Cancer-Classification\mlruns\0\127fa1a776d34b219e9d9196b9abadbf\artifacts\model\data]
+[2024-03-01 22:06:02,317: INFO: dir_util: creating D:\Projects\CNN-Chest-Cancer-Classification\mlruns\0\127fa1a776d34b219e9d9196b9abadbf\artifacts\model\data\model]
+[2024-03-01 22:06:02,317: INFO: dir_util: creating D:\Projects\CNN-Chest-Cancer-Classification\mlruns\0\127fa1a776d34b219e9d9196b9abadbf\artifacts\model\data\model\assets]
+[2024-03-01 22:06:02,323: INFO: dir_util: creating D:\Projects\CNN-Chest-Cancer-Classification\mlruns\0\127fa1a776d34b219e9d9196b9abadbf\artifacts\model\data\model\variables]
+[2024-03-01 22:06:02,409: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
